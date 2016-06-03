@@ -31,6 +31,12 @@ font-family : Georgia, serif;
 font-style : normal;
 font-weight : normal;
 }
+#section {
+    width:350px;
+    float:inherit;
+    margin:auto;
+
+}
 div#contenedor {
 margin-left : auto;
 margin-right : auto;
