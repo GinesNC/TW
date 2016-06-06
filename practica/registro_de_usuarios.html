@@ -10,7 +10,7 @@
 		<link rel="shortcut icon" href="http://decsai.ugr.es/decsai.ico" type="image/vnd.microsoft.icon">
 		<link rel="icon" href="http://decsai.ugr.es/decsai.ico" type="image/vnd.microsoft.icon">
 		<link rel="stylesheet" id="css-style" type="text/css" href="decsai/style-ugr.css" media="all">
-
+		
 					<script type="text/javascript" src="decsai/jquery.js"></script>
 			<script type="text/javascript" src="decsai/interface.js"></script>
 			<link href="decsai/style_dock.css" rel="stylesheet" type="text/css">
@@ -40,45 +40,66 @@
 				<li class="first"><a class="first" href="decsai.html">Inicio---------------------pag.principal</a></li>			</ul>
 		</div>
 
-
-
 	</div>
           <div id="general">
         <div id="menus">
 
+          <div id="login_form_widget" class="mod-buttons fieldset login_form login_form_widget">
+    	      <li class="first"><a class="first" href="infomonitor_decsai.html">info del monitor.</a></li>			</ul>
+    	    <span id="login_error_widget"> </span>
+    	    </div>
 
+          <div id="login_form_widget" class="mod-buttons fieldset login_form login_form_widget">
+    	      <li class="first"><a class="first" href="">Usuarios.</a></li>			</ul>
+    	    <span id="login_error_widget"> </span>
+    	    </div>
 
+          <div id="login_form_widget" class="mod-buttons fieldset login_form login_form_widget">
+    	      <li class="first"><a class="first" href="">modificacion.</a></li>			</ul>
+    	    <span id="login_error_widget"> </span>
+    	    </div>
 
-	    <div id="login_form_widget" class="mod-buttons fieldset login_form login_form_widget">
-	      <li class="first"><a class="first" href="infomonitor_decsai.html">info del monitor.</a></li>			</ul>
-	    <span id="login_error_widget"> </span>
-	    </div>
-
-      <div id="login_form_widget" class="mod-buttons fieldset login_form login_form_widget">
-	      <li class="first"><a class="first" href="">Usuarios.</a></li>			</ul>
-	    <span id="login_error_widget"> </span>
-	    </div>
-
-      <div id="login_form_widget" class="mod-buttons fieldset login_form login_form_widget">
-	      <li class="first"><a class="first" href="">modificacion.</a></li>			</ul>
-	    <span id="login_error_widget"> </span>
-	    </div>
-
-      <div id="login_form_widget" class="mod-buttons fieldset login_form login_form_widget">
-	      <li class="first"><a class="first" href="registro_de_usuarios.html">registro usuarios.</a></li>			</ul>
-	    <span id="login_error_widget"> </span>
-	    </div>
+          <div id="login_form_widget" class="mod-buttons fieldset login_form login_form_widget">
+    	      <li class="first"><a class="first" href="login.html">registro usuarios.</a></li>			</ul>
+    	    <span id="login_error_widget"> </span>
+    	    </div>
 
           </div>
         <div id="pagina">
-      <h1 id="titulo_pagina"><span class="texto_titulo">Informacion del admin</span></h1>
+      <h1 id="titulo_pagina"><span class="texto_titulo">nuevo usuario:</span></h1>
       <div id="contenido" class="sec_interior">
 	<div class="content_doku">
 
 
-	<div style="text-align:center">
 
-	</div>
+    <form action="/registro.php" method="POST">
+
+
+
+        usuario:<br>
+
+        <input type="text" name="nombreUsuario" placeholder="Nombre" style="border: 1px solid #000; "><br><br>
+
+        correo electronico:<br>
+
+        <input type="text" name="contrasena" placeholder="********" style="border: 1px solid #000;"><br><br>
+
+				Despacho:<br>
+
+        <input type="text" name="repetirContrasena" placeholder="********" style="border: 1px solid #000;"><br><br>
+
+				Nombre:<br>
+
+        <input type="text" name="contrasena" placeholder="********" style="border: 1px solid #000;"><br><br>
+
+				<input type="submit" value="Registrar y generar contraseña" style=" background-color: #243349; color:white; ">
+
+
+
+    </form>
+
+	<br><br>
+
 
 
 
