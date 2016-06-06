@@ -44,35 +44,47 @@
           <div id="general">
         <div id="menus">
 
+          <div id="login_form_widget" class="mod-buttons fieldset login_form login_form_widget">
+    	      <li class="first"><a class="first" href="infomonitor_decsai.html">info del monitor.</a></li>			</ul>
+    	    <span id="login_error_widget"> </span>
+    	    </div>
 
+          <div id="login_form_widget" class="mod-buttons fieldset login_form login_form_widget">
+    	      <li class="first"><a class="first" href="">Crear correccion.</a></li>			</ul>
+    	    <span id="login_error_widget"> </span>
+    	    </div>
 
-      	  <form class="widget_loginform" action="/comprobacion_datos.php" method="post">
-	    <div id="login_form_widget" class="mod-buttons fieldset login_form login_form_widget">
-	      <label id="login_widget" for="ilogin_widget" class="login login_widget">
-		<span>Usuario</span>
-		<input name="nombreUsuario" id="ilogin_widget" value="usuario..." onfocus="javascript:if(this.value='usuario...') this.value='';return true;" type="text">
-	      </label>
-	      <label id="password_widget" for="ipassword_widget" class="password password_widget">
-		<span>Contraseña</span>
-		<input name="contrasena" id="ipassword_widget" type="password">
-	      </label>
+					<div id="login_form_widget" class="mod-buttons fieldset login_form login_form_widget">
+						<li class="first"><a class="first" href="eliminar_recurso.html">finalizar recurso.</a></li>			</ul>
+					<span id="login_error_widget"> </span>
+					</div>
 
-	      <label id="enviar_login_widget" for="submit_login_widget" class="enviar_login enviar_login_widget">
-		<input src="" alt="" name="submit" id="submit_login_widget" class="image-enviar" type="image">
-	      </label>
-	    <span id="login_error_widget"> </span>
-	    </div>
-	</form>
           </div>
         <div id="pagina">
-      <h1 id="titulo_pagina"><span class="texto_titulo">Correcciones disponibles:</span></h1>
+      <h1 id="titulo_pagina"><span class="texto_titulo">nuevo usuario:</span></h1>
       <div id="contenido" class="sec_interior">
 	<div class="content_doku">
 
 
-	<div style="text-align:center">
-	correccion1;
-	</div>
+
+    <form action="/eliminar_recurso.php" method="POST">
+
+
+
+        Correccion del examen a eliminar<br>
+
+        <input type="text" name="nombreUsuario" placeholder="Examen" style="border: 1px solid #000; "><br><br>
+
+
+
+				<input type="submit" value="Registrar y generar contraseña" style=" background-color: #243349; color:white; ">
+
+
+
+    </form>
+
+	<br><br>
+
 
 
 
@@ -81,26 +93,6 @@
 	</div>
       </div>
 
-			<div id="banners">
-		<div class="mod-banners">
-			<ul>
-
-                                <li class="banner_container model-resaltado-01 showtext">
-                                        <a class="banner" href="http://www.google.es">
-
-                                                <em>informacionññplplplplpññññññññññññññññññ</em>
-                                        </a>
-                                </li>
-
-
-
-
-
-
-
-			</ul>
-		</div>
-		</div>
 
 		<div id="lateral_doku">
 			<div class="content_doku content_doku_display">
