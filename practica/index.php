@@ -71,7 +71,8 @@
 
 
 	<div style="text-align:center">
-	correccion1;
+		<?php echo include('../recursos_index.php'); ?>
+
 	</div>
 
 
