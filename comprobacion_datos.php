@@ -14,8 +14,8 @@
                 while($row = $result->fetch_assoc()) {
                     if ($usuario == $row["user"] && $contrasena == $row["passwd"]) {
                         if($row["priv_admin"] == 1)
-                          header('Location: /TW/practica/registrado_admin.html');
-                        else header('Location: /TW/practica/registrado.html');
+                          header('Location: /TW/practica/index.php?secc=administrador');
+                        else header('Location: /TW/practica/index.php?secc=profesional');
                       }
             }
           }

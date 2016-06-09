@@ -1,122 +1,64 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es"><head>
-		<title>Departamento de Ciencias de la Computación e I.A | Universidad de Granada</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-		<meta name="description" content="Universidad de Granada - Departamento de Ciencias de la Computación e Inteligencia Artificial CCIA-UGR">
-		<meta name="keywords" content="universidad,granada, Departamento Ciencias de la Computación e Inteligencia Artifical (Docencia Tutorías Asignaturas Profesores)">
-		<meta http-equiv="content-language" name="language" content="es">
-		<meta http-equiv="X-Frame-Options" content="deny">
-		<meta name="verify-v1" content="wzNyCz8sYCNt7F8Bg9GWfznkU43lC9PNaZZAxRzkjJA=">
+<!DOCTYPE html>
+<html lang="es" >
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<link rel="shortcut icon" href="http://decsai.ugr.es/decsai.ico" type="image/vnd.microsoft.icon">
 		<link rel="icon" href="http://decsai.ugr.es/decsai.ico" type="image/vnd.microsoft.icon">
 		<link rel="stylesheet" id="css-style" type="text/css" href="decsai/style-ugr.css" media="all">
-
-					<script type="text/javascript" src="decsai/jquery.js"></script>
-			<script type="text/javascript" src="decsai/interface.js"></script>
-			<link href="decsai/style_dock.css" rel="stylesheet" type="text/css">
-
-			<!--[if lt IE 7]>
-			 <style type="text/css">
-			 .dock img { behavior: url(iepngfix.htc) }
-			 </style>
-			<![endif]-->
-		  	</head>
+</head>
 	<body>
 		<div id="contenedor_margenes" class="">
-			<div id="contenedor" class="">
-				<div id="cabecera" class="">
-					<h1 id="cab_inf">Ciencias de la Computación e Inteligencia Artificial</h1>
-					<div id="formularios">
+		<?php
+					session_start();
+					if(isset($_GET['secc']))
+							$selecc = $_GET['secc'];
+					else
+							$selecc = 'index';
+					include '../cabecera.php';
+			?>
 
-						<a href="http://www.ugr.es/" id="enlace_ugr">Universidad de Granada</a>
-						<span class="separador_enlaces"> | </span>
-						<div class="depto titulo"><span class="titulo_stack">Departamento</span><a href="http://decsai.ugr.es/index.php" id="enlace_stack">Departamento de Ciencias de la Computación e I.A.</a></div>
-						<span class="separador_enlaces"> | </span>
-					</div>
+<div id="general">
+			<?php
+							switch ($selecc){
+									case "index":
+											include('../principal.php');
+									break;
+									case "administrador":
+											include "registrado_admin.php";
+									break;
+									case "profesional":
+											include "registrado_sin_admin.php";
+									break;
+									case "monitor":
+											include "infomonitor_decsai.html";
+									break;
+									case "registro":
+											include "registro_de_usuarios.php";
+									break;
+									case "crear_recurso":
+											include "crear_recurso.php";
+									break;
+									case "finalizar_recurso":
+											include "borrar_recurso.php";
+									break;
+									case "registrar":
+											include "./vista/registrar.php";
+									break;
+									case "comprobarHabitacion":
+											include "./controlador/comprobar.php";
+											break;
+									case "presupuesto":
+											include "./controlador/controladorPresupuesto.php";
+											break;
+									case "carro":
+											include "./controlador/controladorVistaCarro.php";
+											break;
+									default:
+											include "./vista/presentacion.php";
+									break;
+							}
+					?>
+
 				</div>
-
-		<div id="rastro">
-			<ul id="rastro_breadcrumb">
-				<li class="first"><a class="first" href="index.html">Inicio---------------------pag.principal</a></li>			</ul>
 		</div>
-
-	</div>
-          <div id="general">
-        <div id="menus">
-
-
-
-      	  <form class="widget_loginform" action="/comprobacion_datos.php" method="post">
-	    <div id="login_form_widget" class="mod-buttons fieldset login_form login_form_widget">
-	      <label id="login_widget" for="ilogin_widget" class="login login_widget">
-		<span>Usuario</span>
-		<input name="nombreUsuario" id="ilogin_widget" value="usuario..." onfocus="javascript:if(this.value='usuario...') this.value='';return true;" type="text">
-	      </label>
-	      <label id="password_widget" for="ipassword_widget" class="password password_widget">
-		<span>Contraseña</span>
-		<input name="contrasena" id="ipassword_widget" type="password">
-	      </label>
-
-	      <label id="enviar_login_widget" for="submit_login_widget" class="enviar_login enviar_login_widget">
-		<input src="" alt="" name="submit" id="submit_login_widget" class="image-enviar" type="image">
-	      </label>
-	    <span id="login_error_widget"> </span>
-	    </div>
-	</form>
-          </div>
-        <div id="pagina">
-      <h1 id="titulo_pagina"><span class="texto_titulo">Correcciones disponibles:</span></h1>
-      <div id="contenido" class="sec_interior">
-	<div class="content_doku">
-
-
-	<div style="text-align:center">
-		<?php echo include('../recursos_index.php'); ?>
-
-	</div>
-
-
-
-  	    </div>
-	  </div>
-	</div>
-      </div>
-
-			<div id="banners">
-		<div class="mod-banners">
-			<ul>
-
-                                <li class="banner_container model-resaltado-01 showtext">
-                                        <a class="banner" href="http://www.google.es">
-
-                                                <em>informacionññplplplplpññññññññññññññññññ</em>
-                                        </a>
-                                </li>
-
-
-
-
-
-
-
-			</ul>
-		</div>
-		</div>
-
-		<div id="lateral_doku">
-			<div class="content_doku content_doku_display">
-				<div class="content_doku">
-				</div>
-			</div>
-		</div>
-
-
-	<script src="decsai/urchin.js" type="text/javascript"></script>
-	<script type="text/javascript">_uacct = "UA-2290740-1";urchinTracker();</script>
-
-
-			    </div>
-		    </div>
-
-
     </body></html>
