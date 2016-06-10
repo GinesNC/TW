@@ -36,14 +36,14 @@
                           header('Location: /TW/practica/index.php?secc=profesional');
                         }
                       }
-                    else {
-                      $_SESSION['error'] = "Usuario o contraseña incorrectos.";
-                      header('Location: /TW/practica/index.php?secc=index');
-                    }
 
 
-              else
-                echo "error acceso";
+              }
+              else {
+                $_SESSION['error'] = "Usuario o contraseña incorrectos.";
+                header('Location: /TW/practica/index.php?secc=index');
+              }
+
 
 
 
