@@ -5,7 +5,7 @@
 
       <a href="http://www.ugr.es/" id="enlace_ugr">Universidad de Granada</a>
       <span class="separador_enlaces"> | </span>
-      <div class="depto titulo"><span class="titulo_stack">Departamento</span><a href="http://decsai.ugr.es/index.php" id="enlace_stack">Departamento de Ciencias de la Computación e I.A.</a></div>
+      <div class="depto titulo"><span class="titulo_stack">Departamento</span><a href="index.php?secc=index" id="enlace_stack">Departamento de Ciencias de la Computación e I.A.</a></div>
       <span class="separador_enlaces"> | </span>
     </div>
   </div>

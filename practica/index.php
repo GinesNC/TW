@@ -41,22 +41,7 @@
 									case "finalizar_recurso":
 											include "borrar_recurso.php";
 									break;
-									case "registrar":
-											include "./vista/registrar.php";
-									break;
-									case "comprobarHabitacion":
-											include "./controlador/comprobar.php";
-											break;
-									case "presupuesto":
-											include "./controlador/controladorPresupuesto.php";
-											break;
-									case "carro":
-											include "./controlador/controladorVistaCarro.php";
-											break;
-									default:
-											include "./vista/presentacion.php";
-									break;
-							}
+								}
 					?>
 
 				</div>
