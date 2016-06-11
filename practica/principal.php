@@ -25,7 +25,7 @@
 
 <div style="text-align:center">
 <?php echo include('base_datos/recursos_index.php'); ?>
-
+<!--
 <form class="widget_loginform" action="base_datos/apuntarse_recurso.php" method="post">
 
   Nombre:
@@ -40,16 +40,20 @@
   <input type="text" name="nombreRecurso" placeholder="AAAAAA" style="border: 1px solid #000; ">
   <input type="submit" value="Apuntarse">
 
-</form>
-
+</form>*/
+-->
 </div>
 
 
 
     </div>
 </div>
+
+
 </div>
+<?php include 'alumnos.php'; ?>
   </div>
+
 
 
 
