@@ -7,7 +7,7 @@
 		<link rel="stylesheet" id="css-style" type="text/css" href="decsai/style-ugr.css" media="all">
 </head>
 	<body>
-		<div id="contenedor_margenes" class="">
+	<div id="contenedor_margenes" class="">
 		<?php
 					session_start();
 					if(isset($_GET['secc']))
@@ -15,6 +15,7 @@
 					else
 							$selecc = 'index';
 					include '../cabecera.php';
+
 			?>
 
 <div id="general">
@@ -45,5 +46,8 @@
 					?>
 
 				</div>
+
+				<?php include '../footer.php'; ?>
+
 		</div>
     </body></html>
