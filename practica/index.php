@@ -21,25 +21,25 @@
 			<?php
 							switch ($selecc){
 									case "index":
-											include('../principal.php');
+											include('principal.php');
 									break;
 									case "administrador":
-											include "registrado_admin.php";
+											include "administrador/registrado_admin.php";
 									break;
 									case "profesional":
-											include "registrado_sin_admin.php";
+											include "sin_privilegios/registrado_sin_admin.php";
 									break;
 									case "monitor":
-											include "infomonitor_decsai.html";
+											include "con_y_sin_privilegios/infomonitor_decsai.html";
 									break;
 									case "registro":
-											include "registro_de_usuarios.php";
+											include "administrador/registro_de_usuarios.php";
 									break;
 									case "crear_recurso":
-											include "crear_recurso.php";
+											include "con_y_sin_privilegios/crear_recurso.php";
 									break;
 									case "finalizar_recurso":
-											include "borrar_recurso.php";
+											include "con_y_sin_privilegios/borrar_recurso.php";
 									break;
 								}
 					?>

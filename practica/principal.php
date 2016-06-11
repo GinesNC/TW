@@ -4,10 +4,16 @@
         <?php
           //poner un if, para que si la seion esta abierta muestre el menu correspondiente y si no el login.
           if($_SESSION['logueado'])
-            if($_SESSION['priv_admin'])
-              include "menu_admin.php";
-            else
-              include "menu_registrado.php";
+            if($_SESSION['priv_admin']){
+              include "login.php";
+              //include "administrador/menu_admin.php";
+            }
+
+            else{
+              include "login.php";
+              //include "sin_privilegios/menu_registrado.php";
+            }
+
           else
               include "login.php";
         ?>
@@ -18,7 +24,7 @@
 
 
 <div style="text-align:center">
-<?php echo include('../recursos_index.php'); ?>
+<?php echo include('base_datos/recursos_index.php'); ?>
 
 </div>
 

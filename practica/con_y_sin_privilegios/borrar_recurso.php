@@ -1,4 +1,4 @@
-<?php echo include('menu_registrado.php'); ?>
+<?php echo include('sin_privilegios/menu_registrado.php'); ?>
 				<div id="pagina">
       <h1 id="titulo_pagina"><span class="texto_titulo">Eliminar recurso:</span></h1>
       <div id="contenido" class="sec_interior">
@@ -6,7 +6,7 @@
 
 
 
-    <form action="/eliminar_recurso.php" method="POST">
+    <form action="base_datos/eliminar_recurso.php" method="POST">
 
 
 
@@ -30,4 +30,3 @@
   	    </div>
 	  </div>
 	</div>
-	

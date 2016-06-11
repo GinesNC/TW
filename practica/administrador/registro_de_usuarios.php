@@ -1,4 +1,4 @@
-<?php echo include('menu_admin.php'); ?>
+<?php echo include('administrador/menu_admin.php'); ?>
 <div id="pagina">
 <h1 id="titulo_pagina"><span class="texto_titulo">Informacion del admin</span></h1>
 <div id="contenido" class="sec_interior">
@@ -10,7 +10,7 @@
 
 
 
-      <form action="/registro.php" method="POST">
+      <form action="base_datos/registro.php" method="POST">
 
 
 
