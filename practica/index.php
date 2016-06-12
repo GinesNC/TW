@@ -5,6 +5,8 @@
 		<link rel="shortcut icon" href="http://decsai.ugr.es/decsai.ico" type="image/vnd.microsoft.icon">
 		<link rel="icon" href="http://decsai.ugr.es/decsai.ico" type="image/vnd.microsoft.icon">
 		<link rel="stylesheet" id="css-style" type="text/css" href="decsai/style-ugr.css" media="all">
+
+		<script type="text/javascript" src="../generar_usuario_pass.js"></script>
 </head>
 	<body>
 	<div id="contenedor_margenes" class="">
@@ -41,6 +43,12 @@
 									break;
 									case "finalizar_recurso":
 											include "con_y_sin_privilegios/borrar_recurso.php";
+									break;
+									case "modificarDatos":
+											include "con_y_sin_privilegios/formulario_modificacion_datos.php";
+									break;
+									case "eliminarUsuario":
+											include "con_y_sin_privilegios/eliminar_usuario.php";
 									break;
 								}
 					?>

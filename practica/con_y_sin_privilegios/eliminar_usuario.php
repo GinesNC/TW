@@ -6,11 +6,11 @@
 
 
 
-    <form action="base_datos/eliminar_recurso.php" method="POST">
+    <form action="base_datos/borrar_usuario.php" method="POST">
 
 
 
-        Correccion del examen a eliminar<br>
+        Usuario a eliminar<br>
 
         <input type="text" name="nombreUsuario" placeholder="Examen" style="border: 1px solid #000; "><br><br>
 

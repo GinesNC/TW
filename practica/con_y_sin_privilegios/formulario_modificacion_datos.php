@@ -10,7 +10,7 @@
 
 
 
-      <form action="base_datos/registro.php" method="POST">
+      <form action="base_datos/modificar_usuario.php" method="POST">
 
 
 
@@ -30,13 +30,16 @@
 
           <input type="text" name="correo" placeholder="usuario@ejemplo.com" style="border: 1px solid #000;"><br><br>
 
-  				Privilegios administrador:<br>
+  				usuario:
 
-        	<input type="radio" name="priv_admin" value=0 checked> NO <br>
-  				<input type="radio" name="priv_admin" value=1> SI <br><br>
+          contraseña:
+
+          repetir contraseña:
 
           id del usuario:
           <input type="text" name="id" placeholder="codigo" style="border: 1px solid #000;"><br><br>
+
+
   				<input type="submit" value="Registrar">
 
 
@@ -51,9 +54,6 @@
     	    </div>
 
 </div>
-
-
-
 </div>
 </div>
 </div>

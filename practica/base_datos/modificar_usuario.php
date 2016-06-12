@@ -10,13 +10,11 @@
             $dni=$_POST['dni'];
             $correo=$_POST['correo'];
             $priv_admin=$_POST['priv_admin'];
+            $user=$_POST['user'];
+            $passwd=$_POST['pass'];
+            $id=$_POST['id'];
 
-
-
-            $user="";
-            $passwd="";
-
-          mysqli_query($link,"INSERT INTO usuarios VALUES ('$nombre', '$apellidos', '$dni', '$correo', $priv_admin, '$user', '$passwd')") or die ("Error al dar de alta al usuario!!");
+          mysqli_query($link," UPDATE usuarios SET nombre='$nombre',apellidos='$apellidos',dni='$dni', correo='$correo, user='$user',passwd='$passwd' WHERE id='$id'") or die ("Error al modificar!!");
 
             echo '<h2> Registro completo </h2> <a href="/TW/practica/index.html">Volver a la pagina de inicio.</a>'
             ;

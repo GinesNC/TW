@@ -1,20 +1,25 @@
 <div id="menus">
 
-        <?php include 'sin_privilegios/menu_registrado.php'; ?>
 
-        <div id="login_form_widget" class="mod-buttons fieldset login_form login_form_widget">
-            <li class="first"><a class="first" href="">Usuarios.</a></li>			</ul>
-            <span id="login_error_widget"> </span>
-        </div>
 
-        <div id="login_form_widget" class="mod-buttons fieldset login_form login_form_widget">
-            <li class="first"><a class="first" href="">modificacion.</a></li>			</ul>
-            <span id="login_error_widget"> </span>
-        </div>
+        <div id="enlaces_secciones" class="mod-menu_secciones">
 
-        <div id="login_form_widget" class="mod-buttons fieldset login_form login_form_widget">
-            <li class="first"><a class="first" href="index.php?secc=registro">registro usuarios.</a></li>			</ul>
-            <span id="login_error_widget"> </span>
-        </div>
+        <ul>
+      				<li class="tipo2 item-first_level"><a >Usuarios.</a></li>
+              <ul>
+                 <li class="tipo1 item-second_level first-child"><a href="index.php?secc=registro">Alta.</a></li>
+      				 <li class="tipo1 item-second_level first-child"><a href="index.php?secc=modificarDatos">modificacion.</a></li>
+             <li class="tipo1 item-second_level first-child"><a href="index.php?secc=eliminarUsuario">eliminar.</a></li>
+            </ul>
 
+
+
+
+
+
+      	</ul>
+      			      </div>
+
+
+                  <?php include 'sin_privilegios/menu_registrado.php'; ?>
     </div>
