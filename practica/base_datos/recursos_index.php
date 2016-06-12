@@ -7,12 +7,21 @@
 
             //$sql = "SHOW TABLES";
 
-          $result= mysqli_query($link,"SHOW TABLES") or die ("<h2>Error......</h2>");
+          $sql = "SELECT * from recursos_activos";
+          $result = $link->query($sql);
 
-          while ($table = mysqli_fetch_array($result)) {
-             echo ($table[0] . "<br>");
+          if ($result->num_rows > 0) {
+            while ($row = $result->fetch_assoc()) {
+             echo "id: " . $row["id"]. " - fecha: " . $row["fecha"]. " " . " - nombre: " . $row["nombre"]. " " . "<br>";
 
           }
+
+
+
+
+        } else {
+    echo "0 results";
+}
 
       // output data of each row
 

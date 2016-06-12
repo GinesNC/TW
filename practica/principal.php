@@ -24,7 +24,26 @@
 
 
 <div style="text-align:center">
-<?php echo include('base_datos/recursos_index.php'); ?>
+  <div id="section">
+
+      <table style="width:100%">
+      <tr>
+
+        <td><?php echo include('base_datos/recursos_index.php'); ?></td>
+
+
+</tr>
+  <tr>
+          <td>codigo2</td>
+        <td>Despacho</td>
+    </tr>
+      <tr>
+      <td>codigon</td>
+  <td>Despacho</td>
+    </tr>
+  </table>
+</div>
+
 <!--
 <form class="widget_loginform" action="base_datos/apuntarse_recurso.php" method="post">
 
