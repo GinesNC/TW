@@ -11,7 +11,10 @@
 	<body>
 	<div id="contenedor_margenes" class="">
 		<?php
+					error_reporting( error_reporting() & ~E_NOTICE );
+
 					session_start();
+
 					if(isset($_GET['secc']))
 							$selecc = $_GET['secc'];
 					else
@@ -50,6 +53,16 @@
 									case "eliminarUsuario":
 											include "con_y_sin_privilegios/eliminar_usuario.php";
 									break;
+									case "cerrar_sesion":
+											// remove all session variables
+
+											session_unset();
+
+											// destroy the session
+											session_destroy();
+											include "principal.php";
+									break;
+
 								}
 					?>
 

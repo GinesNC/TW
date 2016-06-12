@@ -1,7 +1,9 @@
 
         		<?php echo include('administrador/menu_admin.php'); ?>
         <div id="pagina">
-      <h1 id="titulo_pagina"><span class="texto_titulo">Informacion del admin</span></h1>
+      <h1 id="titulo_pagina"><span class="texto_titulo">
+        <?php echo "Bienveido/a " . $_SESSION['nombre'] . ".<br>";?>
+      </span></h1>
       <div id="contenido" class="sec_interior">
 	<div class="content_doku">
 

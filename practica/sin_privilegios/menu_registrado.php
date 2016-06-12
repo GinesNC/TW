@@ -13,7 +13,7 @@
 
 	  </ul>
 
-
+			<li class="tipo2 item-first_level"><a href="index.php?secc=cerrar_sesion"> Cerrar sesion </a></li>
 
 	</ul>
 			      </div>

@@ -17,7 +17,7 @@
 <input src="" alt="" name="submit" id="submit_login_widget" class="image-enviar" type="image">
 </label>
 <span id="login_error_widget"> </span>
- <font color="red">
+ <font size=4 face="verdana" color="orange" >
    <?php print_r($_SESSION['error']); ?>
  </font>
 
