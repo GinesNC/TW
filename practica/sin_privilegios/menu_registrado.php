@@ -3,7 +3,7 @@
 
   <ul>
 
-				<li class="tipo2 item-first_level"><a href="index.php?secc=monitor">info del monitor.</a></li>
+				<li class="tipo2 item-first_level"><a target="_blank" class="first" href="index.php?secc=monitor">info del monitor.</a></li>
 				<ul> <li class="tipo1 item-second_level first-child"><a href="">manejar monitor</a></li> </ul>
 				<li class="tipo2 item-first_level"><a> Recursos </a></li>
 
