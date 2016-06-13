@@ -7,10 +7,12 @@
 		<link rel="stylesheet" id="css-style" type="text/css" href="decsai/style-ugr.css" media="all">
 
 		<script type="text/javascript" src="../generar_usuario_pass.js"></script>
+
 </head>
 	<body>
 	<div id="contenedor_margenes" class="">
 		<?php
+					include(tiempo.php);
 					error_reporting( error_reporting() & ~E_NOTICE );
 
 					session_start();
