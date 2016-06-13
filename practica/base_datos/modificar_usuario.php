@@ -12,7 +12,9 @@
             $priv_admin=$_POST['priv_admin'];
             $user=$_POST['user'];
             $passwd=$_POST['pass'];
-            $id=$_POST['id'];
+            if($_SESSION['priv_admin'])
+              $id=$_POST['id'];
+            else $id=$_SESSION['id'];
 
           mysqli_query($link," UPDATE usuarios SET nombre='$nombre',apellidos='$apellidos',dni='$dni', correo='$correo, user='$user',passwd='$passwd' WHERE id='$id'") or die ("Error al modificar!!");
 

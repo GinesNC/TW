@@ -19,7 +19,9 @@
 							$selecc = $_GET['secc'];
 					else
 							$selecc = 'index';
-					include '../cabecera.php';
+
+					if($selecc!= "monitor")
+						include '../cabecera.php';
 
 			?>
 
@@ -29,12 +31,10 @@
 									case "index":
 											include('principal.php');
 									break;
-									case "administrador":
-											include "administrador/registrado_admin.php";
+									case "usuario":
+											include "con_y_sin_privilegios/registrado.php";
 									break;
-									case "profesional":
-											include "sin_privilegios/registrado_sin_admin.php";
-									break;
+
 									case "monitor":
 											include "con_y_sin_privilegios/infomonitor_decsai.html";
 									break;
@@ -68,7 +68,9 @@
 
 				</div>
 
-				<?php include '../footer.php'; ?>
+				<?php
+				if($selecc!= "monitor")
+					include '../footer.php'; ?>
 
 		</div>
     </body></html>

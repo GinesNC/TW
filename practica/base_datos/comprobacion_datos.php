@@ -14,25 +14,16 @@
             if ($result->num_rows > 0) {
                     while ($row = $result->fetch_assoc()){
                     if ($usuario == $row["user"] && $contrasena == $row["passwd"]) {
-                        if($row["priv_admin"] == 1){
-                          $_SESSION['nombre']=$row["nombre"];
-                          $_SESSION['email']=$row["correo"];
-                          $_SESSION['dni']=$row["dni"];
-                          $_SESSION['priv_admin']=$row['priv_admin'];
-                          $_SESSION['logueado']=true;
-                          $_SESSION['error'] = "";
-                          header('Location: /TW/practica/index.php?secc=administrador');
-                        }
-                        else{
-                          $_SESSION['nombre']=$row["nombre"];
-                          $_SESSION['email']=$row["correo"];
-                          $_SESSION['dni']=$row["dni"];
-                          $_SESSION['priv_admin']=$row['priv_admin'];
-                          $_SESSION['logueado']=true;
-                          $_SESSION['error'] = "";
 
-                          header('Location: /TW/practica/index.php?secc=profesional');
-                        }
+                          $_SESSION['nombre']=$row["nombre"];
+                          $_SESSION['email']=$row["correo"];
+                          $_SESSION['dni']=$row["dni"];
+                          $_SESSION['priv_admin']=$row['priv_admin'];
+                          $_SESSION['id']=$row['id'];
+                          $_SESSION['logueado']=true;
+                          $_SESSION['error'] = "";
+                          header('Location: /TW/practica/index.php?secc=usuario');
+
                       }
 
 

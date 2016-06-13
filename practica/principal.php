@@ -4,13 +4,7 @@
         <?php
           //poner un if, para que si la seion esta abierta muestre el menu correspondiente y si no el login.
           if($_SESSION['logueado'])
-            if($_SESSION['priv_admin']){
-              include "administrador/menu_admin.php";
-            }
-
-            else{
-              include "sin_privilegios/menu_registrado.php";
-            }
+            include "con_y_sin_privilegios/menu.php";
 
           else
               include "login.php";

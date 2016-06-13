@@ -1,5 +1,5 @@
 
-        		<?php echo include('menu_registrado.php'); ?>
+        		<?php echo include('con_y_sin_privilegios/menu.php'); ?>
         <div id="pagina">
       <h1 id="titulo_pagina"><span class="texto_titulo">
           <?php echo "Bienveido/a " . $_SESSION['nombre'] . ".<br>";?>
