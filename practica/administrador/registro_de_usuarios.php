@@ -1,4 +1,4 @@
-<?php echo include('administrador/menu_admin.php'); ?>
+<?php echo include('con_y_sin_privilegios/menu.php'); ?>
 <div id="pagina">
 <h1 id="titulo_pagina"><span class="texto_titulo">Informacion del admin</span></h1>
 <div id="contenido" class="sec_interior">
@@ -37,7 +37,17 @@
 
           id del usuario:
           <input type="text" name="id" placeholder="codigo" style="border: 1px solid #000;"><br><br>
-  				<input type="submit" value="Registrar">
+
+          User: **
+          <br>
+          passwd: **
+          <br>
+
+          **Generado automaticamente.
+
+
+
+          <input type="submit" value="Registrar">
 
 
 

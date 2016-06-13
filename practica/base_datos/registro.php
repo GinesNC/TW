@@ -11,9 +11,13 @@
             $correo=$_POST['correo'];
             $priv_admin=$_POST['priv_admin'];
 
+            $user="aa";
+            echo '<script type="text/javascript">
+              $user=generarUser("Gines","Navarrete","26501500A");
+
+            </script>';
 
 
-            $user="";
             $passwd="";
 
           mysqli_query($link,"INSERT INTO usuarios VALUES ('$nombre', '$apellidos', '$dni', '$correo', $priv_admin, '$user', '$passwd')") or die ("Error al dar de alta al usuario!!");

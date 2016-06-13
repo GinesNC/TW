@@ -6,7 +6,7 @@
 
         <ul>
           <li class="tipo2 item-first_level"><a target="_blank" class="first" href="index.php?secc=monitor">info del monitor.</a></li>
-          <ul> <li class="tipo1 item-second_level first-child"><a href="">manejar monitor</a></li> </ul>
+          <ul> <li class="tipo1 item-second_level first-child"><a href="index.php?secc=gestion_recursos">manejar monitor</a></li> </ul>
           <li class="tipo2 item-first_level"><a> Recursos </a></li>
 
             <ul>

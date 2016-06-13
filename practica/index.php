@@ -55,6 +55,9 @@
 									case "eliminarUsuario":
 											include "con_y_sin_privilegios/eliminar_usuario.php";
 									break;
+									case "gestion_recursos":
+											include "con_y_sin_privilegios/manejo_colas.php";
+									break;
 									case "cerrar_sesion":
 											// remove all session variables
 
