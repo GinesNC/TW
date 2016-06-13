@@ -1,4 +1,4 @@
-<?php echo include('sin_privilegios/menu_registrado.php'); ?>
+<?php echo include('con_y_sin_privilegios/menu.php'); ?>
 				<div id="pagina">
       <h1 id="titulo_pagina"><span class="texto_titulo">Eliminar recurso:</span></h1>
       <div id="contenido" class="sec_interior">

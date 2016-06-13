@@ -1,5 +1,5 @@
 
-	<?php echo include('sin_privilegios/menu_registrado.php'); ?>
+	<?php echo include('con_y_sin_privilegios/menu.php'); ?>
 <div id="pagina">
       <h1 id="titulo_pagina"><span class="texto_titulo">Crear recurso:</span></h1>
       <div id="contenido" class="sec_interior">
@@ -17,7 +17,7 @@
 
         fecha:<br>
 
-        <input type="text" name="fecha" placeholder="00/00/0000" style="border: 1px solid #000;"><br><br>
+        <input type="text" name="fecha" placeholder="YYYY-MM-DD" style="border: 1px solid #000;"><br><br>
 
 				hora inicio<br>
 

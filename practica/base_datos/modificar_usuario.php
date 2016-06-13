@@ -18,7 +18,7 @@
 
           mysqli_query($link," UPDATE usuarios SET nombre='$nombre',apellidos='$apellidos',dni='$dni', correo='$correo, user='$user',passwd='$passwd' WHERE id='$id'") or die ("Error al modificar!!");
 
-            echo '<h2> Registro completo </h2> <a href="/TW/practica/index.html">Volver a la pagina de inicio.</a>'
+            echo '<h2> Registro completo </h2> <a href="index.php?secc=index'">Volver a la pagina de inicio.</a>'
             ;
 
         ?>

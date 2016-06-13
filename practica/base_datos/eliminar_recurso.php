@@ -13,7 +13,7 @@
 
             mysqli_query($link,"DELETE FROM recursos_activos WHERE nombre='$usuario'") or die ("<h2>Error..2....</h2>");
 
-            echo '<h2> Registro completo </h2> <a href="login.html">Login</a>'
+            echo '<h2> Registro completo </h2> <a href="index.php?secc=index'">Login</a>'
             ;
 
         ?>
