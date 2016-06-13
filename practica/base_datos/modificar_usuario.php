@@ -1,5 +1,5 @@
 <?php
-
+    session_start();
 
         //conexión base de datos.
             $link = mysqli_connect("localhost","root","puen20") or die("<h2>No se encuentra el servidor</h2>");
@@ -16,9 +16,8 @@
               $id=$_POST['id'];
             else $id=$_SESSION['id'];
 
-          mysqli_query($link," UPDATE usuarios SET nombre='$nombre',apellidos='$apellidos',dni='$dni', correo='$correo, user='$user',passwd='$passwd' WHERE id='$id'") or die ("Error al modificar!!");
+          mysqli_query($link," UPDATE usuarios SET nombre='$nombre',apellidos='$apellidos',dni='$dni', correo='$correo' WHERE id='$id'") or die ("Error al modificar!!");
 
-            echo '<h2> Registro completo </h2> <a href="index.php?secc=index'">Volver a la pagina de inicio.</a>'
-            ;
+            echo '<h2> Registro completo </h2> <a href="index.php?secc=index">Volver a la pagina de inicio.</a>';
 
         ?>
