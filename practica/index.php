@@ -12,7 +12,7 @@
 	<body>
 	<div id="contenedor_margenes" class="">
 		<?php
-					include(tiempo.php);
+					include 'tiempo.php';
 					error_reporting( error_reporting() & ~E_NOTICE );
 
 					session_start();
