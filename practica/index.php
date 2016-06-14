@@ -49,6 +49,9 @@
 									case "registro":
 											include "administrador/registro_de_usuarios.php";
 									break;
+									case "usuarios":
+											include "administrador/lista_usuarios.php";
+									break;
 									case "crear_recurso":
 											include "con_y_sin_privilegios/crear_recurso.php";
 									break;

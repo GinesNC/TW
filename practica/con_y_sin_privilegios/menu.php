@@ -15,7 +15,7 @@
 
             </ul>
             <?php if ($_SESSION['priv_admin']) {
-              echo '<li class="tipo2 item-first_level"><a >Usuarios.</a></li>
+              echo '<li class="tipo2 item-first_level"><a href="index.php?secc=usuarios" >Usuarios.</a></li>
               <ul>
                  <li class="tipo1 item-second_level first-child"><a href="index.php?secc=registro">Alta.</a></li>
       				 <li class="tipo1 item-second_level first-child"><a href="index.php?secc=modificarDatos">modificacion.</a></li>

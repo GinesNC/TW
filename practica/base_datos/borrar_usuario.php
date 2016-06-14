@@ -8,9 +8,13 @@
             $id=$_POST['id'];
 
             //delete from
-          mysqli_query($link," DELETE FROM usuarios WHERE nombre='$id ") or die ("Error al dar de alta al usuario!!");
-
-            echo '<h2> Registro completo </h2> <a href="/TW/practica/index.html">Volver a la pagina de inicio.</a>'
-            ;
+            $sql="SELECT * from usuarios WHERE id='$id'";
+            $result = $link->query($sql);
+            if ($result->num_rows > 0) {
+                mysqli_query($link," DELETE FROM usuarios WHERE id='$id' ") ;
+                echo '<h2> Borrado con éxito </h2> <a href="../index.php?secc=eliminarUsuario">Volver a la pagina anterior.</a>';
+              }
+            else echo '<div style="text-align:center">
+              <h2> Error al borrar el usuario </h2> <a href="../index.php?secc=eliminarUsuario">Volver a la pagina anterior.</a>';
 
         ?>
