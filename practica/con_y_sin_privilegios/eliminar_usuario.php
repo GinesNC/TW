@@ -10,9 +10,12 @@
 
 
 
-        Usuario a eliminar<br>
+        Usuario a eliminar: <br>
+				<span class="error">**ID del usuario. </span><br>
 
-        <input type="text" name="nombreUsuario" placeholder="Examen" style="border: 1px solid #000; "><br><br>
+        <input type="text" name="nombreUsuario"
+				placeholder="ID" style="border: 1px solid #000; "
+				required pattern="[A-Z]{4}[0-9]{2}[A-Z]{1}" title="Dos primeras letras del nombre, dos primeras del primer apellido y las 3 ultimas del dni."/> <br><br>
 
 
 

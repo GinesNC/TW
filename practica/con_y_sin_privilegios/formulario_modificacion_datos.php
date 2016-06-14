@@ -14,31 +14,53 @@
 
 
 
-          Nombre:<br>
+				Nombre:<br>
 
-          <input type="text" name="nombre" placeholder="Nombre" style="border: 1px solid #000; "><br><br>
+				<input type="text" name="nombre" id="nombre"
+				placeholder="Nombre" style="border: 1px solid #000; "
+				required pattern=".{1,}" title="1 o mas letras"/><br><br>
 
-  				Apellidos:<br>
+				Apellidos:<br>
 
-          <input type="text" name="apellidos" placeholder="Apellido1 ..." style="border: 1px solid #000; "><br><br>
+				<input type="text" name="apellidos" id="apellidos"
+				placeholder="Apellido1 ..." style="border: 1px solid #000; "
+				required pattern=".{1,}" title="1 o mas letras"/>  <br><br>
 
-  				DNI:<br>
+				DNI:<br>
 
-          <input type="text" name="dni" placeholder="000000000X" style="border: 1px solid #000; "><br><br>
+				<input type="text" name="dni" id="dni"
+				placeholder="000000000X" style="border: 1px solid #000; "
+				required pattern="[0-9]{8}[A-Z]{1}" title="8 números seguidos de una letra en mayúscula."/> <br><br>
 
-          Correo electrónico:<br>
+				Correo electrónico:<br>
 
-          <input type="text" name="correo" placeholder="usuario@ejemplo.com" style="border: 1px solid #000;"><br><br>
+				<input type="text" name="correo" id="correo"
+				placeholder="usuario@ejemplo.com" style="border: 1px solid #000;"
+				required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="El usuario, seguido de un @ y el dominio"/> <br><br>
 
-  				usuario:
+				usuario: <br>
+				<input type="text" name="user"
+				placeholder="Nombre" style="border: 1px solid #000; "
+				required pattern=".{1,}" title="1 o mas letras"/><br><br>
+				contraseña:<br>
+				<input type="password" name="pass1"
+				placeholder="contraseña" style="border: 1px solid #000; "
+				required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="1 o mas letras"/><br><br>
+				repetir contraseña:<br>
+				<input type="password" name="pass2"
+				placeholder="repetir contraseña" style="border: 1px solid #000; "
+				required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="1 o mas letras"/><br><br>
 
-          contraseña:
-
-          repetir contraseña:
 
           <?php if ($_SESSION['priv_admin'])
             echo 'id del usuario:
-            <input type="text" name="id" placeholder="codigo" style="border: 1px solid #000;"><br><br>';?>
+            <input type="text" name="id" placeholder="codigo" style="border: 1px solid #000;"><br><br>
+						Privilegios administrador:<br>
+
+						<input type="radio" name="priv_admin" value=0 checked> NO <br>
+						<input type="radio" name="priv_admin" value=1> SI <br><br>';
+
+						?>
 
 
 
