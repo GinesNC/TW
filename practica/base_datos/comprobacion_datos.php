@@ -22,6 +22,7 @@
                           $_SESSION['id']=$row['id'];
                           $_SESSION['logueado']=true;
                           $_SESSION['error'] = "";
+                          $_SESSION['ultimoAcceso']= time();
                           header('Location: /TW/practica/index.php?secc=usuario');
 
                       }
