@@ -13,12 +13,7 @@
             $priv_admin=$_POST['priv_admin'];
             $id=$_POST['id'];
             $user=$_POST['id'];
-            $passwd=$_POST['id'];
-            /*$passwd='<script type="text/javascript">
-              var aux=generarContr(8);
-              document.write(aux);
-              </script>';
-              //$passwd="clave";*/
+            $passwd = substr( md5(microtime()), 1, 8);
 
           mysqli_query($link,"INSERT INTO usuarios VALUES ('$nombre', '$apellidos', '$dni', '$correo', $priv_admin, '$user', '$passwd','$id')") or die ("Error al dar de alta al usuario!!");
 
