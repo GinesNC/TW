@@ -12,7 +12,8 @@
 
         Correccion del examen a eliminar<br>
 
-        <input type="text" name="nombreUsuario" placeholder="Examen" style="border: 1px solid #000; "><br><br>
+        <input type="text" name="nombreUsuario" placeholder="Examen" style="border: 1px solid #000; "
+				required pattern=".{3,}" title="Dos primeras letras del nombre, dos primeras del primer apellido y las 3 ultimas del dni."/> <br><br>
 
 
 
