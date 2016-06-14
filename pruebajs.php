@@ -16,6 +16,14 @@ document.write(aux);
 
 </script>
 
+<?php
+  $prueba = '<script type="text/javascript">
+    var aux=generarContr(8);
+    document.writeln(aux);
+    </script>';
+$a=  $prueba;
+    echo "aaaaaaaaaaaaaaaaaa". $a."aaaaaaaaaaaaaaaaaa";
+?>
 
 
 <p>tamClave</p>

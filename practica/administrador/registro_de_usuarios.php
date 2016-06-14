@@ -43,7 +43,7 @@
           passwd: **
           <br>
 
-          **Generado automaticamente.
+          **Mismos que id. Se cambian en el primer inicio de sesion.          
 
 
 

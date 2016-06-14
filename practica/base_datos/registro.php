@@ -1,3 +1,4 @@
+
 <?php
 
 
@@ -10,17 +11,16 @@
             $dni=$_POST['dni'];
             $correo=$_POST['correo'];
             $priv_admin=$_POST['priv_admin'];
+            $id=$_POST['id'];
+            $user=$_POST['id'];
+            $passwd=$_POST['id'];
+            /*$passwd='<script type="text/javascript">
+              var aux=generarContr(8);
+              document.write(aux);
+              </script>';
+              //$passwd="clave";*/
 
-            $user="aa";
-            echo '<script type="text/javascript">
-              $user=generarUser("Gines","Navarrete","26501500A");
-
-            </script>';
-
-
-            $passwd="";
-
-          mysqli_query($link,"INSERT INTO usuarios VALUES ('$nombre', '$apellidos', '$dni', '$correo', $priv_admin, '$user', '$passwd')") or die ("Error al dar de alta al usuario!!");
+          mysqli_query($link,"INSERT INTO usuarios VALUES ('$nombre', '$apellidos', '$dni', '$correo', $priv_admin, '$user', '$passwd','$id')") or die ("Error al dar de alta al usuario!!");
 
             echo '<h2> Registro completo </h2> <a href="/TW/practica/index.html">Volver a la pagina de inicio.</a>'
             ;
