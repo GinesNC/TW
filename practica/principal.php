@@ -12,29 +12,15 @@
     <div id="pagina">
   <h1 id="titulo_pagina"><span class="texto_titulo">Correcciones disponibles:</span></h1>
   <div id="contenido" class="sec_interior">
-<div class="content_doku">
+    <div class="content_doku">
 
 
 <div style="text-align:center">
-  <div id="section">
 
-      <table style="width:100%">
-      <tr>
+    <div class="listaRecursos">
+      <?php echo include('base_datos/recursos_index.php'); ?>
+    </div>
 
-        <td><?php echo include('base_datos/recursos_index.php'); ?></td>
-
-
-</tr>
-  <tr>
-          <td>codigo2</td>
-        <td>Despacho</td>
-    </tr>
-      <tr>
-      <td>codigon</td>
-  <td>Despacho</td>
-    </tr>
-  </table>
-</div>
 
 <!--
 <form class="widget_loginform" action="base_datos/apuntarse_recurso.php" method="post">

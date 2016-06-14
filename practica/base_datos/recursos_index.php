@@ -9,12 +9,28 @@
 
           $sql = "SELECT * from recursos_activos";
           $result = $link->query($sql);
+          echo "<table>";
+echo "<tr>";
+echo "<th>id</th>";
+echo "<th>nombre</th>";
+echo "<th>fecha</th>";
+echo "<th>hora inicio - hora fin</th>";
+echo "<th>despacho</th>";
+
+echo "</tr>";
 
           if ($result->num_rows > 0) {
             while ($row = $result->fetch_assoc()) {
-             echo "id: " . $row["id"]. " - fecha: " . $row["fecha"]. " " . " - nombre: " . $row["nombre"]. " " . "<br>";
+              echo "<tr>
+         <td align='right'> $row[id] </td>
+         <td> $row[nombre] </td>
+         <td> $row[fecha] </td>
+         <td> $row[hora_inicio] - $row[hora_fin] </td>
+         <td> $row[despacho] </td>
 
-          }
+         </tr>";
+}
+echo "</table>";
 
 
 

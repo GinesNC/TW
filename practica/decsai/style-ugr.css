@@ -5,7 +5,11 @@
     border-style: solid;
     border-width: 0;
 }
-
+.listaRecursos{
+  width:515px;
+height:400px;
+overflow:scroll;
+}
 html {
     background-color: #FFFFFF;
 }
