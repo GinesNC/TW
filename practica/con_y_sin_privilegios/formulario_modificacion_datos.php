@@ -45,11 +45,11 @@
 				contraseña:<br>
 				<input type="password" name="pass1"
 				placeholder="contraseña" style="border: 1px solid #000; "
-				required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="1 o mas letras"/><br><br>
+				required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="minimo 8 con numeros, mayúsculas y minúsculas"/><br><br>
 				repetir contraseña:<br>
 				<input type="password" name="pass2"
 				placeholder="repetir contraseña" style="border: 1px solid #000; "
-				required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="1 o mas letras"/><br><br>
+				required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="minimo 8 con numeros, mayúsculas y minúsculas"/><br><br>
 
 
           <?php if ($_SESSION['priv_admin'])
