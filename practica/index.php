@@ -44,7 +44,7 @@
 									break;
 
 									case "monitor":
-											include "con_y_sin_privilegios/infomonitor_decsai.html";
+											include "con_y_sin_privilegios/infomonitor_decsai.php";
 									break;
 									case "registro":
 											include "administrador/registro_de_usuarios.php";

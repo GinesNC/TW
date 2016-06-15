@@ -15,6 +15,7 @@ echo "<th>nombre</th>";
 echo "<th>usuario</th>";
 echo "<th>privilegios</th>";
 echo "<th>correo</th>";
+echo "<th>clave</th>";
 
 echo "</tr>";
 
@@ -26,6 +27,7 @@ echo "</tr>";
          <td> $row[user] </td>
          <td> $row[priv_admin]</td>
          <td> $row[correo] </td>
+         <td> $row[passwd] </td>
 
          </tr>";
 }

@@ -1,3 +1,7 @@
+<?php
+$self = $_SERVER['PHP_SELF']; //Obtenemos la página en la que nos encontramos
+header("refresh:3; url=index.php?secc=monitor"); //Refrescamos cada 300 segundos
+?>
 <div id="pagina">
       <h1 id="titulo_pagina"><span class="texto_titulo">turno:</span></h1>
       <div id="contenido" class="sec_interior">
