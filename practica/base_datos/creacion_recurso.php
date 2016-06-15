@@ -1,9 +1,8 @@
 <?php
         //conexión base de datos.
         session_start();
-            $link = mysqli_connect("localhost","root","puen20") or die("<h2>No se encuentra el servidor</h2>");
-            $db=mysqli_select_db($link,"tw_practica") or die ("<h2>Error de conexion</h2>");
-
+        $link = mysqli_connect("localhost","ejercicio_pw","pass_ejercicio_pw") or die("<h2>No se encuentra el servidor</h2>");
+        $db=mysqli_select_db($link,"75932436y") or die ("<h2>Error de conexion</h2>");
             $nombreRecurso=$_POST['nombreRecurso'];
             $fecha=$_POST['fecha'];
             $hora_inicio=$_POST['hinicio'];

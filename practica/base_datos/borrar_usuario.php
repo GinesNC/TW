@@ -2,9 +2,8 @@
 
 
         //conexión base de datos.
-            $link = mysqli_connect("localhost","root","puen20") or die("<h2>No se encuentra el servidor</h2>");
-            $db=mysqli_select_db($link,"tw_practica") or die ("<h2>Error de conexion</h2>");
-
+        $link = mysqli_connect("localhost","ejercicio_pw","pass_ejercicio_pw") or die("<h2>No se encuentra el servidor</h2>");
+        $db=mysqli_select_db($link,"75932436y") or die ("<h2>Error de conexion</h2>");
             $id=$_POST['id'];
 
             //delete from
