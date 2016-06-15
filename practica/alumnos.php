@@ -5,7 +5,7 @@ Apuntarse a recurso
 
 <label id="login_widget" for="ilogin_widget" class="login login_widget">
 <span>Nombre:</span>
-<input name="nombre" id="ilogin_widget" value="nombre" type="text">
+<input name="nombre" id="ilogin_widget" placeholder="Nombre" type="text">
 </label>
 <label id="login_widget" for="ilogin_widget" class="login login_widget">
 <span>DNI:</span>
