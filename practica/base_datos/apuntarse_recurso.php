@@ -7,7 +7,10 @@ error_reporting( error_reporting() & ~E_NOTICE );
             $recurso=$_POST['nombreRecurso'];
             $dni=$_POST['dni'];
             $nombre=$_POST['nombre'];
-
+            $codigo_cliente="aaaaaa";
+            $time = time();
+            $time = date("H:i:s", $time);
+            $time="18:00:00";
             //recurso es el codgi del recurso creado
             $sql="SELECT * from $recurso WHERE dni='$dni'";
             $result = $link->query($sql);
@@ -16,9 +19,9 @@ error_reporting( error_reporting() & ~E_NOTICE );
                 <h2> ERROR: El alumno ya se ha apuntado al recurso </h2> <a href="../index.php?secc=index">Volver a la pagina anterior.</a></div>';
               }
             else{
-              mysqli_query($link,"INSERT INTO $recurso VALUES ('$nombre', '$dni')");
+              mysqli_query($link,"INSERT INTO $recurso VALUES ('$nombre', '$dni','$codigo_cliente','$time'") or die ("ERRORRR");
                echo '<div style="text-align:center">
-              <h2> Registro completado </h2> <a href="../index.php?secc=index">Volver a la pagina anterior.</a></div>';
+              <h2> Registro completado </h2> <a href="../index.php?secc=exitoApuntarse">Ver codigo usuario</a></div>';
             }
 
 

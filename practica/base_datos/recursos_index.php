@@ -1,13 +1,23 @@
 <?php
+        session_start();
         //conexión base de datos.
+
             $link = mysqli_connect("localhost","root","puen20") or die("<h2>No se encuentra el servidor</h2>");
             $db=mysqli_select_db($link,"tw_practica") or die ("<h2>Error de conexion</h2>");
 
 
-
+            $id_prof=$_SESSION['id'];
             //$sql = "SHOW TABLES";
-
-          $sql = "SELECT * from recursos_activos";
+            if($_GET['secc']=="index")
+                  $sql = "SELECT * from recursos_activos";
+            else{
+            if($_SESSION['priv_admin']){
+              $sql = "SELECT * from recursos_activos";
+            }
+            else{
+              $sql = "SELECT * from recursos_activos WHERE id_prof='$id_prof'";
+            }
+          }
           $result = $link->query($sql);
           echo "<table>";
 echo "<tr>";

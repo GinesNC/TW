@@ -23,7 +23,7 @@
              <li class="tipo1 item-second_level first-child"><a href="index.php?secc=eliminarUsuario">eliminar.</a></li>
             </ul>';
             }
-              else echo '<li class="tipo1 item-second_level first-child"><a href="index.php?secc=modificarDatos">modificacion.</a></li>';
+              else echo '<li class="tipo2 item-first_level"><a href="index.php?secc=modificarDatos">Modificar mis datos.</a></li>';
 
             ?>
 

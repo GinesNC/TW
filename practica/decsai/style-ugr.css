@@ -409,7 +409,7 @@ div#pagina {
     background-color: #FFFFFF;
     background-image: url("../img/interior/contenido-fondo.png");
     background-position: left 41px;
-    background-repeat: no-repeat;
+
 }
 div#pagina h1#titulo_pagina {
     min-height: 34px;
