@@ -34,13 +34,13 @@
 
 				Despacho:<br>
 
-        <input type="text" name="despacho" placeholder="AAAAAA" style="border: 1px solid #000;"
+        <input type="text" name="despacho" placeholder="X00-0" style="border: 1px solid #000;"
 				required pattern="[A-Z]{1}[0-9]{2}(-[0-4]{1})" title="Despacho-planta"/><br><br>
 
 				codigo:<br>
 
-        <input type="text" name="id" placeholder="AAAAAA" style="border: 1px solid #000;"
-				required pattern=".{3,}" title="mas de tres letras"/><br><br>
+        <input type="text" name="id" placeholder="aaa" style="border: 1px solid #000;"
+				required pattern="[a-z]{3,}" title="mas de tres letras minúsculas"/><br><br>
 
 				<input type="submit" value="Crear recurso" style=" background-color: #243349; color:white; ">
 

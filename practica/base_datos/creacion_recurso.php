@@ -19,7 +19,7 @@
                 <h2> ERROR: Ya existe el recurso. </h2> <a href="../index.php?secc=crear_recurso">Volver a la pagina anterior.</a></div>';
               }
             else{
-              mysqli_query($link,"CREATE TABLE $id(nombre varchar(30), dni varchar(9), codigo varchar(4), identificador TIME)") or die ("<h2>Error......</h2>");
+              mysqli_query($link,"CREATE TABLE $id(nombre varchar(30), dni varchar(9), codigo varchar(4), OrderDate datetime NOT NULL DEFAULT NOW())") or die ("<h2>Error......</h2>");
 
               mysqli_query($link,"INSERT INTO recursos_activos VALUES ('$nombreRecurso', '$fecha', '$hora_inicio', '$hora_fin', '$id','$desp','$id_prof')") or die ("Error al insertar recurso");
                echo '<div style="text-align:center">

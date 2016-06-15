@@ -9,13 +9,13 @@
             $id_prof=$_SESSION['id'];
             //$sql = "SHOW TABLES";
             if($_GET['secc']=="index")
-                  $sql = "SELECT * from recursos_activos";
+                  $sql = "SELECT * from recursos_activos ORDER BY fecha ASC";
             else{
             if($_SESSION['priv_admin']){
-              $sql = "SELECT * from recursos_activos";
+              $sql = "SELECT * from recursos_activos ORDER BY fecha ASC";
             }
             else{
-              $sql = "SELECT * from recursos_activos WHERE id_prof='$id_prof'";
+              $sql = "SELECT * from recursos_activos WHERE id_prof='$id_prof' ORDER BY fecha ASC";
             }
           }
           $result = $link->query($sql);
