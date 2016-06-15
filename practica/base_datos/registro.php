@@ -15,9 +15,21 @@
             $user=$_POST['id'];
             $passwd = substr( md5(microtime()), 1, 8);
 
-          mysqli_query($link,"INSERT INTO usuarios VALUES ('$nombre', '$apellidos', '$dni', '$correo', $priv_admin, '$user', '$passwd','$id')") or die ("Error al dar de alta al usuario!!");
+            $sql="SELECT * from usuarios WHERE correo='$correo' or dni='$dni'";
+            $result = $link->query($sql);
+            if ($result->num_rows > 0) {
+                echo '<div style="text-align:center">
+                <h2> ERROR: El usuario ya existe. Correo o dni registrado ya. </h2> <a href="../index.php?secc=registro">Volver a la pagina anterior.</a></div>';
+              }
+            else{
+              mysqli_query($link,"INSERT INTO usuarios VALUES ('$nombre', '$apellidos', '$dni', '$correo', $priv_admin, '$user', '$passwd','$id')");
+               echo '<div style="text-align:center">
+              <h2> Registro completado </h2> <a href="../index.php?secc=registro">Volver a la pagina anterior.</a></div>';
+            }
+              $link->close();
 
-            echo '<h2> Registro completo </h2> <a href="/TW/practica/index.html">Volver a la pagina de inicio.</a>'
-            ;
+
+
+
 
         ?>

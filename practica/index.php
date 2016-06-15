@@ -58,6 +58,9 @@
 									case "finalizar_recurso":
 											include "con_y_sin_privilegios/borrar_recurso.php";
 									break;
+									case "modificarRecurso":
+											include "con_y_sin_privilegios/modificacion_recursos.php";
+									break;
 									case "modificarDatos":
 											include "con_y_sin_privilegios/formulario_modificacion_datos.php";
 									break;

@@ -26,9 +26,16 @@
               $contrasena=$passwd1;
 
 
+              $sql="SELECT * from usuarios WHERE id='$id'";
+              $result = $link->query($sql);
+              if ($result->num_rows > 0) {
+                mysqli_query($link," UPDATE usuarios SET nombre='$nombre',apellidos='$apellidos',dni='$dni', correo='$correo',priv_admin='$priv_admin', user='$user', passwd='$contrasena' WHERE id='$id'");
+                  echo '<div style="text-align:center">
+                  <h2> Modificado con éxito </h2> <a href="../index.php?secc=modificarDatos">Volver a la pagina anterior.</a></div>';
+                }
+              else echo '<div style="text-align:center">
+                <h2> Error al modificar datos, no existe el usuario. </h2> <a href="../index.php?secc=modificarDatos">Volver a la pagina anterior.</a></div>';
 
-          mysqli_query($link," UPDATE usuarios SET nombre='$nombre',apellidos='$apellidos',dni='$dni', correo='$correo',priv_admin='$priv_admin', user='$user', passwd='$contrasena' WHERE id='$id'") or die ("Error al modificar!!");
-
-            echo '<h2> Registro completo </h2> <a href="index.php?secc=index">Volver a la pagina de inicio.</a>';
+                $link->close();
 
         ?>

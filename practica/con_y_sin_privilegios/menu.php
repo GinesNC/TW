@@ -11,7 +11,8 @@
 
             <ul>
               <li class="tipo1 item-second_level first-child"><a href="index.php?secc=crear_recurso">Crear correccion.</a></li>
-              <li class="tipo1 item-second_level"><a href="index.php?secc=finalizar_recurso">finalizar recurso.s</a></li>
+              <li class="tipo1 item-second_level"><a href="index.php?secc=modificarRecurso">Modificar recurso.</a></li>
+              <li class="tipo1 item-second_level"><a href="index.php?secc=finalizar_recurso">finalizar recurso.</a></li>
 
             </ul>
             <?php if ($_SESSION['priv_admin']) {

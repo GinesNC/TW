@@ -18,9 +18,8 @@
 
         fecha:<br>
 
-        <input type="text" name="fecha" placeholder="YYYY-MM-DD" style="border: 1px solid #000;"
-				required pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))
-" title="YYYY-MM-DD"/><br><br>
+        <input type="date" name="fecha" placeholder="YYYY-MM-DD" style="border: 1px solid #000;"
+				required  step="1" min="<?php echo date("Y-m-d");?>" max="2016-12-31" value="<?php echo date("Y-m-d");?>"/><br><br>
 
 				hora inicio<br>
 
@@ -37,6 +36,11 @@
 
         <input type="text" name="despacho" placeholder="AAAAAA" style="border: 1px solid #000;"
 				required pattern="[A-Z]{1}[0-9]{2}(-[0-4]{1})" title="Despacho-planta"/><br><br>
+
+				codigo:<br>
+
+        <input type="text" name="id" placeholder="AAAAAA" style="border: 1px solid #000;"
+				required pattern=".{3,}" title="mas de tres letras"/><br><br>
 
 				<input type="submit" value="Crear recurso" style=" background-color: #243349; color:white; ">
 

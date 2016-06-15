@@ -12,9 +12,10 @@
             $result = $link->query($sql);
             if ($result->num_rows > 0) {
                 mysqli_query($link," DELETE FROM usuarios WHERE id='$id' ") ;
-                echo '<h2> Borrado con éxito </h2> <a href="../index.php?secc=eliminarUsuario">Volver a la pagina anterior.</a>';
+                echo '<div style="text-align:center">
+                <h2> Borrado con éxito </h2> <a href="../index.php?secc=eliminarUsuario">Volver a la pagina anterior.</a></div>';
               }
             else echo '<div style="text-align:center">
-              <h2> Error al borrar el usuario </h2> <a href="../index.php?secc=eliminarUsuario">Volver a la pagina anterior.</a>';
-
+              <h2> Error al borrar el usuario, no existe. </h2> <a href="../index.php?secc=eliminarUsuario">Volver a la pagina anterior.</a></div>';
+              $link->close();
         ?>

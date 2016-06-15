@@ -16,8 +16,10 @@
                     if ($usuario == $row["user"] && $contrasena == $row["passwd"]) {
 
                           $_SESSION['nombre']=$row["nombre"];
+                          $_SESSION['apellidos']=$row["apellidos"];
                           $_SESSION['email']=$row["correo"];
                           $_SESSION['dni']=$row["dni"];
+                          $_SESSION['user']=$row["user"];
                           $_SESSION['priv_admin']=$row['priv_admin'];
                           $_SESSION['id']=$row['id'];
                           $_SESSION['logueado']=true;
@@ -32,7 +34,7 @@
             }
               else {
                 $_SESSION['error'] = "Usuario o contraseña incorrectos.";
-                header('Location: /TW/practica/index.php?secc=index');
+                header('Location: ../index.php?secc=index');
               }
 
 
