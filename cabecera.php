@@ -12,6 +12,6 @@
 
 <div id="rastro">
 <ul id="rastro_breadcrumb">
-  <li class="first"><a class="first" href="index.php?secc=index">Inicio---------------------pag.principal</a></li>			</ul>
+  <li class="first"><a class="first" href="index.php?secc=index">Inicio</a></li>			</ul>
 </div>
 </div>

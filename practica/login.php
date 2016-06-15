@@ -3,7 +3,9 @@
 
 
   <form class="widget_loginform" action="base_datos/comprobacion_datos.php" method="post">
+    <span>Acceso identificado</span>
 <div id="login_form_widget" class="mod-buttons fieldset login_form login_form_widget">
+
 <label id="login_widget" for="ilogin_widget" class="login login_widget">
 <span>Usuario</span>
 <input name="nombreUsuario" id="ilogin_widget" value="usuario..." onfocus="javascript:if(this.value='usuario...') this.value='';return true;" type="text">

@@ -5,17 +5,17 @@ Apuntarse a recurso
 
 <label id="login_widget" for="ilogin_widget" class="login login_widget">
 <span>Nombre:</span>
-<input name="nombre" id="ilogin_widget" value="usuario..." onfocus="javascript:if(this.value='usuario...') this.value='';return true;" type="text">
+<input name="nombre" id="ilogin_widget" value="nombre" type="text">
 </label>
 <label id="login_widget" for="ilogin_widget" class="login login_widget">
 <span>DNI:</span>
-<input name="dni" id="ilogin_widget" value="usuario..." onfocus="javascript:if(this.value='usuario...') this.value='';return true;" type="text">
+<input name="dni" id="ilogin_widget" required pattern="[0-9]{8}[A-Z]{1}" title="8 números seguidos de una letra en mayúscula." type="text"/>
 </label>
 <label id="login_widget" for="ilogin_widget" class="login login_widget">
-<span>ID recurso:</span>
-<input name="nombreRecurso" id="ilogin_widget" value="usuario..." onfocus="javascript:if(this.value='usuario...') this.value='';return true;" type="text">
+<span>ID recurso:</span> <span style="color:orange">****** En minusculas. ******</span>
+<input name="nombreRecurso" id="ilogin_widget" required pattern=".{3,}" title="mas de 3 letras en minuscula" type="text">
 </label>
-
+<br><br>
 <input type="submit" value="Registrar">
 
 
